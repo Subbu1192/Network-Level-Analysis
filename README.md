@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/14c2ee4c-4e0c-48cd-8a97-dceb4e4fb5c5)![image](https://github.com/user-attachments/assets/30181139-9a14-4fb1-b21f-f75122499207)# Network-Level-Analysis
+# Network-Level-Analysis
 
 Brief: - The activity comprises of analyzing  DNS and ICMP traffic in transit using data from a network protocol analyzer tool. The goal is to identify which network protocol was utilized in assessment of the cybersecurity incident. 
 In the internet layer of the TCP/IP model, the IP formats data packets into IP datagrams. The information provided in the datagram of an IP packet can provide security analysts with insight into suspicious data packets in transit.
@@ -14,3 +14,4 @@ TCPDUMP LOG:   The first two lines of the log file show the initial outgoing req
               In front of each request and response, you find timestamps that indicate when the incident happened. In the log, this is the first sequence of numbers displayed: 13:24:32.192571. This means the time is 1:24 p.m., 32.192571 seconds.
               After the source and destination IP addresses, there can be a number of additional details like the protocol, port number of the source, and flags. In the first line of the error log, the query identification number appears as: 35084. The    plus sign after the query identification number indicates there are flags associated with the UDP message. The "A?" indicates a flag associated with the DNS request for an A record, where an A record maps a domain name to an IP address. 
 The error message, "udp port 53 unreachable" is mentioned in the last line. Port 53 is a port for DNS service. The word "unreachable" in the message indicates the UDP message requesting an IP address for the domain "www.yummyrecipesforme.com" did not go through to the DNS server because no service was listening on the receiving DNS port.
+![image](https://github.com/user-attachments/assets/674fc51f-de8c-4a63-9ea8-e9c6ce905720)
